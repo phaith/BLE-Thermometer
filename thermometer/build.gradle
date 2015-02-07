@@ -29,23 +29,23 @@ android {
         versionName "2"
     }
 
-    signingConfigs {
-        debug {
-            storeFile file("debug.keystore")
-        }
-
-        release {
-            storeFile file("android.nat.production.keystore")
-
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            storeFile file("debug.keystore")
+//        }
+//
+//        release {
+//            storeFile file("android.nat.production.keystore")
+//
+//        }
+//    }
 
     buildTypes {
         release {
             debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt')
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
     }
 }
